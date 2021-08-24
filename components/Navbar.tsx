@@ -6,6 +6,9 @@ export default function Navbar() {
         <nav className="navbar">
             <ul>
                 <li>
+                    DERMOT OBRIEN
+                </li>
+                <li>
                     <Link href="/">
                         <button>Home</button>
                     </Link>
