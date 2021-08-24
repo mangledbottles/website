@@ -96,6 +96,10 @@ code {
   
 }
 
+.navbar .name:hover{
+  color: var(--color-blue);
+}
+
 /* Buttons */
 
 .btn, button {

@@ -6,11 +6,8 @@ export default function Navbar() {
         <nav className="navbar">
             <ul>
                 <li>
-                    DERMOT OBRIEN
-                </li>
-                <li>
                     <Link href="/">
-                        <button>Home</button>
+                        <h2 className="name">DERMOT OBRIEN</h2>
                     </Link>
                 </li>
 
