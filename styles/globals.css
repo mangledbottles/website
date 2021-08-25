@@ -16,6 +16,9 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   margin-top: 50px;
+
+  /* display: grid; */
+  /* grid-template-columns: repeat(12, 10fr); */
 }
 
 
@@ -23,6 +26,21 @@ body {
 main {
   padding: 1rem 10vw;
 }
+
+section {
+  display: block;
+  height: calc(100vh - 120px);
+  width:100%;
+  box-sizing:border-box;
+}
+
+section, .middleScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
@@ -74,6 +92,10 @@ code {
   z-index: 99;
 }
 
+.navbar .right {
+  position: static;
+}
+
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -97,13 +119,14 @@ code {
 }
 
 .navbar .name:hover{
+  transition: color .2s ease,border-bottom-color .2s ease;
   color: var(--color-blue);
 }
 
 /* Buttons */
 
 .btn, button {
-  background-color: var(--color-gray);
+  background-color: var(--color-bg);
   border: none;
   color: var(--color-text);
   padding: 1rem 2rem;

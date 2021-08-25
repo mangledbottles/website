@@ -1,3 +1,44 @@
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+/* .title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+} */
+
+.title {
+  margin: 0;
+  padding: 0vw;
+  line-height: 1.2;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2.2rem
+  }
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+
+/* main,  */
+/* section {
+  display: block;
+  background: #CFF;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
+} */
+
 /* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -33,10 +74,6 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
 
 .title a:hover,
 .title a:focus,
