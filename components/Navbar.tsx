@@ -11,9 +11,14 @@ export default function Navbar() {
                     </Link>
                 </li>
 
-                <li>
+                <li className="push-right">
                     <Link href="/resume">
                         <button>Resume</button>
+                    </Link>
+                </li>
+                <li className="push-right">
+                    <Link href="/contact">
+                        <button>Contact</button>
                     </Link>
                 </li>
             </ul>
