@@ -4,6 +4,9 @@ import Loader from '../components/Loader';
 import 'bulma/css/bulma.min.css';
 
 import { mainBody } from "../editable/config";
+import { useEffect } from 'react';
+
+import * as THREE from 'three';
 
 export default function Home() {
   return (
@@ -82,3 +85,4 @@ export default function Home() {
     </div>
   )
 }
+
