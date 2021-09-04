@@ -132,14 +132,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <canvas className="threeD" id="bg">
+
+      </canvas>
+
       <main className={styles.main}>
 
-        <section className="middleScreen">
-          <h1 className={styles.title}>
-            Hello, I'm <a>Dermot O'Brien</a>. <br /> <br />
-            I'm an entrepreneur and fullstack developer.
-          </h1>
-        </section>
         <div className="middleScreen">
           <section className={styles.title}>
             <h1 className="is-size-1 is-uppercase has-text-weight-bold">
@@ -152,13 +150,13 @@ export default function Home() {
           </section>
         </div>
 
-      <div>
-        <Loader show />
-      </div>
+        <div>
+          <Loader show />
+        </div>
 
 
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet  
+          Lorem ipsum dolor sit amet
           <code className={styles.code}>let x = 5</code>
         </p>
 
