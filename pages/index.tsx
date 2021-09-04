@@ -73,6 +73,15 @@ export default function Home() {
     }
 
     Array(200).fill().forEach(addStar);
+
+
+    // Avatar    
+    let texture = new THREE.TextureLoader().load('./me.png');
+    let myPhoto = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasicMaterial({ map: texture }));
+    scene.add(myPhoto);
+
+    myPhoto.position.z = -5;
+    myPhoto.position.x = 2;
   })
   return (
 
