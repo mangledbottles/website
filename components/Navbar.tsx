@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { mainBody } from "../editable/config";
 
 /** Top Navbar */
 export default function Navbar() {
@@ -7,16 +8,16 @@ export default function Navbar() {
             <ul>
                 <li>
                     <Link href="/">
-                        <h2 className="name">DERMOT OBRIEN</h2>
+                        <h2 className="name">{`<${mainBody.firstName} />`}</h2>
                     </Link>
                 </li>
 
-                <li className="push-right">
+                <li className="right">
                     <Link href="/resume">
                         <button>Resume</button>
                     </Link>
                 </li>
-                <li className="push-right">
+                <li className="right">
                     <Link href="/contact">
                         <button>Contact</button>
                     </Link>

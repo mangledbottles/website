@@ -1,3 +1,19 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+.threeD {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100vw !important;
+}
+
+
+.container {
+  max-width: 100vw;
+  /* display: grid; */
+  /* grid-template-columns: repeat(6, 1fr); */
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -10,7 +26,7 @@
 } */
 
 .title {
-  margin: 0;
+  /* margin: 20vh; */
   padding: 0vw;
   line-height: 1.2;
   font-size: 3rem;
