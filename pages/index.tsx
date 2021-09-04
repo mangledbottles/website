@@ -103,6 +103,25 @@ export default function Home() {
 
     document.body.onscroll = moveCamera;
     moveCamera();
+
+    // Animation Loop
+    function animate() {
+      requestAnimationFrame(animate);
+
+      torus.rotation.x += 0.01;
+      torus.rotation.y += 0.005;
+      torus.rotation.z += 0.01;
+
+
+      if (textMyName) {
+        textMyName.rotation.x += 0.03;
+        textMyName.rotation.y += 0.005;
+        textMyName.rotation.z += 0.005;
+      }
+      renderer.render(scene, camera);
+    }
+    animate();
+
   })
   return (
 
