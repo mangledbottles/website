@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Loader from '../components/Loader';
+import 'bulma/css/bulma.min.css';
 
 
 export default function Home() {
@@ -21,6 +22,16 @@ export default function Home() {
             I'm an entrepreneur and fullstack developer.
           </h1>
         </section>
+        <div className="middleScreen">
+          <section className={styles.title}>
+            <h1 className="is-size-1 is-uppercase has-text-weight-bold">
+
+            </h1>
+            <div className="is-size-5">
+              I'm an entrepreneur and fullstack developer.
+            </div>
+          </section>
+        </div>
 
       <div>
         <Loader show />
