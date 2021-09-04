@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Loader from '../components/Loader';
 import 'bulma/css/bulma.min.css';
 
+import { mainBody } from "../editable/config";
 
 export default function Home() {
   return (
