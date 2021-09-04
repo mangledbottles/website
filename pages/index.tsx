@@ -25,6 +25,7 @@ export default function Home() {
         <div className="middleScreen">
           <section className={styles.title}>
             <h1 className="is-size-1 is-uppercase has-text-weight-bold">
+              <a>{mainBody.firstName} {mainBody.lastName}</a>. <br />
 
             </h1>
             <div className="is-size-5">
