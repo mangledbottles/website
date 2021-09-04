@@ -9,6 +9,15 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 
 export default function Home() {
+  useEffect(() => {
+    // Setup
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const ambientLight = new THREE.AmbientLight(0xffffff);
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector('#bg'),
+    });
+  })
   return (
 
     <div className={styles.container}>
