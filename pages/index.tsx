@@ -30,6 +30,28 @@ export default function Home() {
     const material = new THREE.MeshStandardMaterial({ color: 0x3b49df });
     const torus = new THREE.Mesh(geometry, material);
     scene.add(torus);
+
+    // Name
+    const loader = new THREE.FontLoader();
+    let textMyName;
+    loader.load('./gentilis_regular.typeface.json', (font) => {
+      const textGeometry = new THREE.TextGeometry("Dermot O'Brien", {
+        font: font,
+        size: 5,
+        height: 1,
+        color: '#ffbbff'
+      })
+      var textMaterial = new THREE.MeshPhongMaterial(
+        { color: 0xff0000, specular: 0xffffff }
+      );
+
+      textMyName = new THREE.Mesh(textGeometry, textMaterial);
+
+      scene.add(textMyName, ambientLight);
+      textMyName.position.x -= 10;
+      textMyName.position.y -= 3;
+      textMyName.position.z -= 30;
+    });
   })
   return (
 
