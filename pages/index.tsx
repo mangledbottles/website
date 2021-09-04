@@ -52,6 +52,13 @@ export default function Home() {
       textMyName.position.y -= 3;
       textMyName.position.z -= 30;
     });
+
+    // Lights
+    const pointLight = new THREE.PointLight(0xffffff);
+    pointLight.position.set(5, 5, 5);
+
+    scene.add(pointLight, ambientLight);
+
   })
   return (
 
