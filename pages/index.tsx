@@ -82,6 +82,27 @@ export default function Home() {
 
     myPhoto.position.z = -5;
     myPhoto.position.x = 2;
+
+    // Scroll Animation
+    function moveCamera() {
+      const t = document.body.getBoundingClientRect().top;
+
+      if (textMyName) {
+        textMyName.rotation.x += 0.05;
+        textMyName.rotation.y += 0.075;
+        textMyName.rotation.z += 0.001;
+      }
+
+      myPhoto.rotation.y += 0.01;
+      myPhoto.rotation.z += 0.01;
+
+      camera.position.z = t * -0.01;
+      camera.position.x = t * -0.0002;
+      camera.rotation.y = t * -0.0002;
+    }
+
+    document.body.onscroll = moveCamera;
+    moveCamera();
   })
   return (
 
