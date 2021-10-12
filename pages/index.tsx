@@ -139,7 +139,7 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <div className="middleScreen">
+        <div>
           <section>
             <h1 className="is-size-1 is-uppercase has-text-weight-bold">
               <a>{mainBody.firstName} {mainBody.lastName}</a>. <br />
@@ -148,10 +148,10 @@ export default function Home() {
             <div className="is-size-5">
               I'm an entrepreneur and fullstack developer.
             </div>
-          </section>
 
           <Resume />
 
+          </section>
 
 
         </div>
