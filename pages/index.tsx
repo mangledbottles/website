@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Loader from '../components/Loader';
+import Resume from '../components/Resume';
 import 'bulma/css/bulma.min.css';
 
 import { mainBody } from "../editable/config";
@@ -139,7 +140,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <div className="middleScreen">
-          <section className={styles.title}>
+          <section>
             <h1 className="is-size-1 is-uppercase has-text-weight-bold">
               <a>{mainBody.firstName} {mainBody.lastName}</a>. <br />
 
@@ -148,6 +149,11 @@ export default function Home() {
               I'm an entrepreneur and fullstack developer.
             </div>
           </section>
+
+          <Resume />
+
+
+
         </div>
 
         <div>
