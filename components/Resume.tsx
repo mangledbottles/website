@@ -5,8 +5,15 @@ import { mainBody } from "../editable/config";
 export default function Resume() {
     return (
         <div className="card">
+            <div className="block">
+                <Link href="Dermot-OBrien-Resume.pdf">
+                    <button className="button is-link is-light is-large is-fullwidth">Download my Resume 😀</button>
+                </Link>
+            </div>
+
             <div className="columns">
                 <div className="column">
+
                     <header className="card-header">
                         <p className="card-header-title">
                             Experience
