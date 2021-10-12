@@ -1,4 +1,3 @@
-import Loader from '../components/Loader';
 import Resume from '../components/Resume';
 import Head from 'next/head';
 
