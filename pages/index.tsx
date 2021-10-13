@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Loader from '../components/Loader';
 import Resume from '../components/Resume';
 import Contact from '../components/Contact';
 import 'bulma/css/bulma.min.css';
