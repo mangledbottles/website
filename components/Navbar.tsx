@@ -5,7 +5,6 @@ import { mainBody } from "../editable/config";
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <script defer data-domain="dermotobrien.me" src="https://plausible.io/js/plausible.js"></script>
             <ul>
                 <li>
                     <Link href="/">
