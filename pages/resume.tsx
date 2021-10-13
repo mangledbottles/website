@@ -1,5 +1,6 @@
 import Resume from '../components/Resume';
 import Head from 'next/head';
+import 'bulma/css/bulma.min.css';
 
 export default function Home() {
     return (
