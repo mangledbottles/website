@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Contact from '../components/Contact'
+import 'bulma/css/bulma.min.css';
 
 export default function Home() {
     return (
@@ -9,7 +11,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <h3>Email: contact@dermotobrien.me</h3>
+            <Contact />
         </div>
     )
 }

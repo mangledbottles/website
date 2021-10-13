@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Loader from '../components/Loader';
 import Resume from '../components/Resume';
+import Contact from '../components/Contact';
 import 'bulma/css/bulma.min.css';
 
 import { mainBody } from "../editable/config";
@@ -151,14 +152,14 @@ export default function Home() {
 
           <Resume />
 
+          <Contact />
+
           </section>
 
 
         </div>
 
-        <div>
-          <Loader show />
-        </div>
+
 
 
         <p className={styles.description}>
